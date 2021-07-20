@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreyScale</title>
+    <link rel="icon" type="image/x-icon" href="assets/favicon.svg" />
+    <link href="css/utils.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="css/bootstrap.min.css" rel="stylesheet" /> -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+</head>
+
+<body>
+
+    <!-- Navigation Start -->
+    <header>
+        <nav  id="nav">
+            <div class="container row justify-spaceBetween align-center">
+                <div id="nav__logo">API</div>
+                <div class="nav__itemDiv">
+                    <ul class="" id="nav__ul">
+                        <li><a class="nav_link" href="#master">Home</a></li>
+                        <li><a class="nav_link" href="#about">About</a></li>
+                        <!-- <li><a class="nav_link" href="#projects">Projects</a></li> -->
+                        <li><a class="nav_link" href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="hamburger" onclick="navTog()">
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Navigation End -->
+    <!-- Master Start  -->
+    <section class="section row align-center justify-center" id="master">
+        <div class="container">
+            <div class="row justify-center">
+                <div class="text-center">
+                    <h1 class="text-uppercase master__h1">Grayscale</h1>
+                    <h2 class="master__h2">An Api to fill your book sypremacy in <span
+                            class="text-uppercase">Grayscale</span></h2>
+                    <a class="btn btn-primary" href="#about">Get Started</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Master End  -->
+    <!-- About Start -->
+    <section class="section row justify-center text-center" id="about">
+        <div class="container" style="display: flex; flex-direction: column; justify-content: flex-end; height: 80vh;">
+            <div class="row justify-center">
+                <div class="about__container">
+                    <h2 class="">Built with Bootstrap 5</h2>
+                    <p class="">
+                        Grayscale is a free Bootstrap theme created by Start Bootstrap. It can be yours right now,
+                        simply download the template on
+                        <a href="https://startbootstrap.com/theme/grayscale/">the preview page.</a>
+                        The theme is open source, and you can use it for any purpose, personal or commercial.
+                    </p>
+                </div>
+            </div>
+            <div class="about__img">
+                <img src="./assets/img/ipad.png" alt="..." />
+            </div>
+        </div>
+    </section>
+    <!-- About End -->
+
+    <section class="section">
+        <div>
+            Books
+        </div>
+    </section>
+
+     <!-- Signup Start-->
+     <section class="section" id="signup">
+        <div class="signup__content container">
+            <div class="signup__newsletter">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="">Subscribe to receive updates!</h2>
+            </div>
+            <div class="sigup__form">
+                <form id="contactForm">
+                    <div class="row align-center">
+                        <input class="" id="newsletter_input" on type="email" placeholder="Enter Your Email Here....">
+                        <button class="btn btn-primary disabled" type="submit" id="submitButton">
+                            Notify Me!
+                        </button>
+                    </div>
+                    <div class="validation text-center" style="color:white;padding-top: 20px; ; display: none;">
+                        <h1>Successfully Done!</h1>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Signup End-->
+    <!-- Contact Start-->
+    <section class="section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-map-marked-alt"></i>
+                        <h4 class="">Address</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <h5>4923 Market Street, Orlando FL</h5>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-envelope"></i>
+                        <h4 class="">email</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <a href="mailto:a@a.com">hello@yourdomain.com</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-title">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h4 class="">phone</h4>
+                    </div>
+                    <hr>
+                    <div class="card-body">
+                        <a href="tel:01">01766409973</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact End-->
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+
+
+
+
+<section class="section" style="display: none;" id="signup">
+    <div class="container">
+        <div class="row">
+            <div class="text-center">
+                <i class="far fa-paper-plane fa-2x mb-2 text-white"></i>
+                <h2 class="">Subscribe to receive updates!</h2>
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- * * SB Forms Contact Form * *-->
+                <!-- * * * * * * * * * * * * * * *-->
+                <!-- This form is pre-integrated with SB Forms.-->
+                <!-- To make this form functional, sign up at-->
+                <!-- https://startbootstrap.com/solution/contact-forms-->
+                <!-- to get an API token!-->
+                <form class="form-signup" id="contactForm">
+                    <!-- Email address input-->
+                    <div class="row input-group-newsletter">
+                        <div class="col"><input class="form-control" id="emailAddress" type="email" placeholder="Enter email address..." aria-label="Enter email address..." data-sb-validations="required,email" /></div>
+                        <div class="col-auto"><button class="btn btn-primary disabled" id="submitButton" type="submit">Notify Me!</button></div>
+                    </div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:required">An email is required.</div>
+                    <div class="invalid-feedback mt-2" data-sb-feedback="emailAddress:email">Email is not valid.</div>
+                    <!-- Submit success message-->
+                    <!---->
+                    <!-- This is what your users will see when the form-->
+                    <!-- has successfully submitted-->
+                    <div class="d-none" id="submitSuccessMessage">
+                        <div class="text-center mb-3 mt-2 text-white">
+                            <div class="fw-bolder">Form submission successful!</div>
+                            To activate this form, sign up at
+                            <br />
+                            <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
+                        </div>
+                    </div>
+                    <!-- Submit error message-->
+                    <!---->
+                    <!-- This is what your users will see when there is-->
+                    <!-- an error submitting the form-->
+                    <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3 mt-2">Error sending message!</div></div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>

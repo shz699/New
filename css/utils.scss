@@ -1,0 +1,123 @@
+:root{
+    --btn-primary: rgb(85, 137, 133);
+    --btn-primary-hover: rgb(85, 137, 133 , 0.7);
+    --master_text: rgba(255, 255, 255, 0.5);
+
+}
+
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    font-family: "Nunito", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+.row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.justify-spaceBetween{
+    justify-content: space-between;
+}
+.align-center{
+    align-items: center;
+}
+.justify-center{
+    justify-content: center;
+}
+.text-center{
+    text-align: center;
+}
+.text-uppercase{
+    text-transform: uppercase;
+}
+.section{
+    height: 100vh;
+}
+.card{
+    display: inline-block;
+    background: white;
+    border-radius: 5px;
+    border-bottom: 5px solid gray;
+    margin: 20px 20px;
+    padding: 55px;
+    color: black;
+    text-align: center;
+    max-width: 250px;
+    width: 100%;
+    transition: 0.3s ease;
+    &:hover{
+    border-bottom: 5px solid (var(--btn-primary));
+    }
+    &:hover .card-title i{
+    color: var(--btn-primary);
+    }
+    @media (max-width: 500px) {
+        padding: 20px;
+    }
+    .card-title{
+        padding-bottom: 20px;
+        i{
+            color: gray;
+            margin-bottom: 15px;
+        }
+        h4{
+            text-transform: uppercase;
+            font-weight: normal;
+            letter-spacing: 2px;
+            font-size: 0.8rem;
+        }
+    }
+    hr{
+        width: 25%;
+        margin: auto;
+        border:none;
+        border-bottom: 1px solid #64a19d;
+    }
+    .card-body{
+        padding-top: 20px;
+        h5{
+            color: rgba(0, 0, 0, 0.61);
+            font-weight: normal;
+        }
+    }
+}
+.btn{
+    margin-top: 50px;
+    display: inline-block;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    &.disabled{
+        pointer-events: none;
+        opacity: 0.5;
+    }
+}
+
+.btn-primary{
+   background: var(--btn-primary);
+   transition: 0.2s ease;
+   &:hover{
+       background: var(--btn-primary-hover);
+   }
+}
+a{
+    color: var(--btn-primary);
+}
